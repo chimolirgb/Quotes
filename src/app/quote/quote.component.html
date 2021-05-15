@@ -9,9 +9,9 @@
         <div>
 
 
-          <h4 id={{i}} appStrikethrough>
+          <h6 id={{i}} appStrikethrough>
         {{quote.name}} published on {{quote.completeDate|date|uppercase}}
-          </h4>
+          </h6>
 
       <button (click)='toggleDetails(i)' class="btn btn-success">Toggle Details</button>
       </div>
@@ -21,6 +21,10 @@
       </div>
     </div>
   </div>
+
+  <div class="col-md-6">
+    <app-quote-form></app-quote-form>
+    </div> 
 </div>
     <p *ngIf='quotes.length > 2'>You can add as many quotes as you like</p>
     </div>

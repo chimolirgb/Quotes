@@ -1,10 +1,17 @@
-<div>
+
     <h1>Quotes</h1>
     <hr>
     <ul>
-      <li *ngFor='let quote of quotes'>
+      <div *ngFor='let quote of quotes;let i = index'>
+      <li >
         {{quote.name}}
-        <app-quote-detail [quote]='quote'></app-quote-detail>
       </li>
+
+      <button (click)='toggleDetails(i)'>Toggle Details</button>
+        <app-quote-detail *ngIf='quote.showDescription'[quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+      </div>
+      
     </ul>
-  </div>
+    <p *ngIf='quotes.length > 2'>You can add as many quotes as you like</p>
+  
+

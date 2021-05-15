@@ -13,6 +13,16 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'If not us, who? If not now, when?','Author'),
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

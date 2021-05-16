@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'We become what we think about','Author',new Date(2021,5,14)),
+    new Quote(1,'We become what we think about','Author', new Date(2021,5,14)),
     new Quote(2,'If not us, who? If not now, when?','Author',new Date(2021,5,15)),
   ];
 
@@ -26,6 +26,7 @@ export class QuoteComponent implements OnInit {
 
   deleteQuote(isComplete, index){
     if (isComplete) {
+this.quotes.splice(index,1);
 
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
 
@@ -34,6 +35,8 @@ export class QuoteComponent implements OnInit {
     }
   }
 }
+
+
 
   constructor() { }
 

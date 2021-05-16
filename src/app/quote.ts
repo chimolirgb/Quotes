@@ -1,9 +1,13 @@
 export class Quote {
-   public showDescription: boolean;
+   likevote: any;
+    dislikevote(dislikevote: any): void {
+     throw new Error('Method not implemented.');
+    }
+   public showAuthor: boolean;
 
-   constructor(public id: number,public name: string,public description: string, public completeDate: Date){
+   constructor(public id: number,public name: string,public author: string, public completeDate: Date){
 
-     this.showDescription=false;
+     this.showAuthor=false;
 
   }
 }

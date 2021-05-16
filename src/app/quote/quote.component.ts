@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'We become what we think about','Author', new Date(2021,5,14)),
-    new Quote(2,'If not us, who? If not now, when?','Author',new Date(2021,5,15)),
+    new Quote(1,'We become what we think about','Author:Earl nightingale', new Date(2021,5,14)),
+    new Quote(2,'If not us, who? If not now, when?','Author:John F. Kennedy',new Date(2021,5,15)),
   ];
 
   toggleDetails(index){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
 
   addNewQuote(quote){
@@ -35,7 +35,6 @@ this.quotes.splice(index,1);
     }
   }
 }
-
 
 
   constructor() { }

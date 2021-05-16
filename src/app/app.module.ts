@@ -10,6 +10,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { BrowserModule } from '@angular/platform-browser';
     QuoteDetailComponent,
     StrikethroughDirective,
     DateCountPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
   ],
   imports: [
     BrowserModule,

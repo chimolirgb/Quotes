@@ -1,6 +1,15 @@
 # Quotes
 
+# Author
+Lucy Chimoli
+
+# Description
+This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+
+# Technologies Used
+Angular CLI
+Git
 
 ## Development server
 
@@ -25,3 +34,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# License
+MIT License:
+Copyright (c) 2021 Chimoli Lucy.

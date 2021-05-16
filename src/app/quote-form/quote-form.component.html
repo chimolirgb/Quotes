@@ -6,9 +6,10 @@
     <!-- <form #quoteForm='ngForm'> -->
         <div class="form-group">
   
-            <label for="name"> Quote</label> 
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name"  name="name" #name="ngModel" required>
-            Display: {{newQuote.name}}
+            <label for="name">New Quote</label> 
+        
+             <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name"  name="name" #name="ngModel" required> 
+             Display: {{newQuote.name}} 
             
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p> Type a Quote... :) </p>              

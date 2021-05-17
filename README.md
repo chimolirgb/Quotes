@@ -4,7 +4,7 @@
 Lucy Chimoli
 
 # Description
-This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
+This is an Angular CLI application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 # Technologies Used

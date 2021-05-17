@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
- @import "~bootstrap/dist/css/bootstrap.css" 
+ @import "~bootstrap/dist/css/bootstrap.css";
+
+ body{
+     background-image: url(./assets/bb00.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 1000px;
+     font-size: xx-large;
+     color:black;
+ }
+
+ 
+
+
 
  
